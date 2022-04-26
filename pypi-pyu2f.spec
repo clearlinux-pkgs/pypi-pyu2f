@@ -4,7 +4,7 @@
 #
 Name     : pypi-pyu2f
 Version  : 0.1.5
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/29/b5/c1209e6cb77647bc2c9a6a1a953355720f34f3b006b725e303c70f3c0786/pyu2f-0.1.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/29/b5/c1209e6cb77647bc2c9a6a1a953355720f34f3b006b725e303c70f3c0786/pyu2f-0.1.5.tar.gz
 Summary  : U2F host library for interacting with a U2F device over USB.
@@ -14,9 +14,6 @@ Requires: pypi-pyu2f-license = %{version}-%{release}
 Requires: pypi-pyu2f-python = %{version}-%{release}
 Requires: pypi-pyu2f-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pyu2f
-Provides: pyu2f-python
-Provides: pyu2f-python3
 BuildRequires : pypi(six)
 
 %description
@@ -60,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641486042
+export SOURCE_DATE_EPOCH=1651015398
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
